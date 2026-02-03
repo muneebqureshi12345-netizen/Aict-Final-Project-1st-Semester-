@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crumble Pakistan - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('bg.jpeg') no-repeat center center fixed; /* Background image set to 'last.jpg' */
+            background-size: cover;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(90deg, #2100f8, #1100ff);
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #f8b400;
+            transform: scale(1.1);
+        }
+
+        .hero {
+            background-image: url('bg.jpeg'); /* Replace with your hero image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            padding: 6rem 2rem;
+            height: 100vh;
+            color: white;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero button {
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            background-color: #ffcc00;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .hero button:hover {
+            background-color: #e6b800;
+        }
+
+        .cool-invention {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 3rem 2rem;
+            margin: 3rem 0;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .cool-invention h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1100ff;
+        }
+
+        .cool-invention p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .cool-invention button {
+            font-size: 1.2rem;
+            padding: 0.8rem 1.5rem;
+            background-color: #ffcc00;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .cool-invention button:hover {
+            background-color: #e6b800;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .feature {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            animation: floatText 1.5s infinite ease-in-out;
+        }
+
+        .feature img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            color: #1100ff;
+            margin-bottom: 1rem;
+        }
+
+        .feature p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #1100ff;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer a {
+            color: #f8b400;
+            text-decoration: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes floatText {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Crumble Pakistan</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Freshly Baked Gooey Cookies</h2>
+    <p>Delicious cookies delivered right to your door! Each bite is a moment of indulgence.</p>
+    <button onclick="window.location.href='menu.html'">Order Now</button>
+</section>
+
+<section class="cool-invention">
+    <h2>Introducing the "Crumble Innovation"</h2>
+    <p>At Crumble, we believe in pushing the boundaries of cookie-making. Our "Crumble Innovation" is a unique baking technique that ensures the perfect gooey center every time. No matter when you order, you'll get the freshest, most mouth-watering cookie you've ever tasted!</p>
+    <button onclick="window.location.href='about.html'">Learn More</button>
+</section>
+
+<section class="features">
+    <div class="feature">
+        <img src="kchi.jpeg" alt="Quality Ingredients">
+        <h3>Quality Ingredients</h3>
+        <p>We use only the finest ingredients to create mouth-watering cookies, ensuring that every bite is packed with flavor.</p>
+    </div>
+    <div class="feature">
+        <img src="delivery.jpeg" alt="Fast Delivery">
+        <h3>Fast Delivery</h3>
+        <p>Get your fresh cookies delivered right to your doorstep in no time, so you can enjoy them at their best!</p>
+    </div>
+    <div class="feature">
+        <img src="contact.jpeg" alt="Customer Service">
+        <h3>Customer Care</h3>
+        <p>Our friendly team is here to ensure you have a fantastic experience every time you order from us.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Crumble Pakistan. All Rights Reserved | <a href="contact.html">Contact Us</a></p>
+</footer>
+</body>
+</html>
